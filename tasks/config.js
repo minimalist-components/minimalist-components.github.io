@@ -6,6 +6,7 @@ module.exports = {
   ],
   views: {
     src: './sources/views/*.jade',
+    watch: './sources/**/*.jade',
     dest: './'
   },
   imgs: {

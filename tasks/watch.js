@@ -11,7 +11,7 @@ import {
 gulp.task('watch', watchTask);
 
 function watchTask() {
-  gulp.watch(views.src, [
+  gulp.watch(views.watch, [
     'views',
     browserSync.reload,
   ]);
