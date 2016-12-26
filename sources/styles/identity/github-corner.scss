@@ -3,6 +3,9 @@
   position: absolute;
   top: 0;
   right: 0;
+  zoom: 1.25;
+
+  path {fill: $oc-gray-6}
 
   .octo-body, .octo-arm {
     fill: $oc-gray-1;
