@@ -12,7 +12,7 @@ import {browserSync, styles} from './config.js';
 let dependencies = bowerFiles()
   .relative(path.join(__dirname, '..'))
   .ext('scss')
-  .files;
+  .files
 
 let outputStyle = 'compressed';
 
