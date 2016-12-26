@@ -1,8 +1,12 @@
+import browserSync from 'browser-sync'
+import {argv} from 'yargs'
+
 module.exports = {
   lint: [
-    './gulpfile.js',
+    './gulpfile.babel.js',
+    './tasks/*.js',
     './test/**/*.js',
-    './sources/angular/**/*.js'
+    './sources/angular/**/*.js',
   ],
   views: {
     src: './sources/views/*.jade',
@@ -29,14 +33,13 @@ module.exports = {
     src: './sources/sprites/*.png',
     dest: './public/imgs/sprites/'
   },
-  browserSync: require('browser-sync').create(),
+  browserSync: browserSync.create(),
   browserSyncOptions: {
     server: {
       baseDir: './'
     },
     notify: false,
-    middleware: [ require('connect-history-api-fallback')() ],
     reloadDelay: 100,
-    open: require('yargs').argv.open
+    open: argv.open
   }
-};
+}

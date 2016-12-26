@@ -1,27 +1,26 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 import {
   views,
-  templates,
   scripts,
   styles,
   browserSync,
   lint,
-} from './config.js';
+} from './config.js'
 
-gulp.task('watch', watchTask);
+gulp.task('watch', watchTask)
 
 function watchTask() {
   gulp.watch(views.watch, [
     'views',
     browserSync.reload,
-  ]);
+  ])
 
-  gulp.watch(styles.watch, ['styles']);
+  gulp.watch(styles.watch, ['styles'])
 
   gulp.watch(scripts.src, [
     'scripts',
     browserSync.reload,
-  ]);
+  ])
 
-  gulp.watch(lint, ['lint']);
+  gulp.watch(lint, ['lint'])
 }

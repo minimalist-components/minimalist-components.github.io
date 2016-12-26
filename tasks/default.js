@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 
 gulp.task('default', [
   'views',
@@ -8,4 +8,4 @@ gulp.task('default', [
   'lint',
   'imgs',
   'watch'
-]);
+])
