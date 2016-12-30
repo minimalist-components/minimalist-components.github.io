@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "mn-layout": "^0.0.10",
-    "open-color": "^1.4.1"
+    "mn-gh-page": "^0.0.5"
   }
 }
